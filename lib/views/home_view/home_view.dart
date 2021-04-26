@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../components/back_icon_button.dart';
 import '../input_view/background.dart';
+import 'planet_listview.dart';
 
 class HomeView extends StatelessWidget {
   @override
@@ -11,10 +13,27 @@ class HomeView extends StatelessWidget {
     return Stack(
       children: [
         Background(height: height, width: width),
-        Scaffold(
-          backgroundColor: Colors.transparent,
-          body: Column(
-            children: [Text('hi')],
+        SafeArea(
+          child: Scaffold(
+            backgroundColor: Colors.transparent,
+            appBar: AppBar(
+              title: Text(
+                'Your Weight On',
+                style: TextStyle(
+                  fontSize: 23.0,
+                  letterSpacing: 3.0,
+                ),
+              ),
+              centerTitle: true,
+              elevation: 0.0,
+              backgroundColor: Colors.transparent,
+              leading: BackIconButton(),
+            ),
+            body: ListView(
+              children: [
+                PlanetListView(),
+              ],
+            ),
           ),
         ),
       ],

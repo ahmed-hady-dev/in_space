@@ -34,7 +34,10 @@ class InputTextField extends StatelessWidget {
             decoration: InputDecoration(
               counterText: "",
               hintText: 'KG',
-              hintStyle: kTextFieldStyle,
+              hintStyle: TextStyle(
+                fontSize: 25,
+                color: Colors.black87,
+              ),
               filled: true,
               fillColor: Colors.grey[50],
               focusColor: Colors.grey[50],

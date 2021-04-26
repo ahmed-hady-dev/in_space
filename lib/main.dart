@@ -7,7 +7,7 @@ import 'navigator/named_navigator_impl.dart';
 import 'views/input_view/input_view.dart';
 
 void main() {
-  runApp(Provider<InputDataController>(
+  runApp(ChangeNotifierProvider<InputDataController>(
     create: (context) => InputDataController(),
     child: MyApp(),
   ));
