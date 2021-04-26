@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
       navigatorKey: NamedNavigatorImpl.navigatorState,
       home: AnimatedSplash(
         imagePath: 'assets/images/launch_image.png',
-        duration: 2000,
+        duration: 1000,
         type: AnimatedSplashType.StaticDuration,
         home: InputView(),
       ),

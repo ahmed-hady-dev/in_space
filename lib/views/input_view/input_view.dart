@@ -38,7 +38,7 @@ class InputView extends StatelessWidget {
                       ),
                       SizedBox(height: height * 0.02),
                       InputTextField(),
-                      SizedBox(height: height * 0.05),
+                      SizedBox(height: height * 0.02),
                       StartButton(),
                     ],
                   ),

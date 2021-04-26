@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../components/back_icon_button.dart';
+
 import '../input_view/background.dart';
 import 'planet_listview.dart';
 
@@ -22,6 +23,7 @@ class HomeView extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 23.0,
                   letterSpacing: 3.0,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
               centerTitle: true,
@@ -32,6 +34,18 @@ class HomeView extends StatelessWidget {
             body: ListView(
               children: [
                 PlanetListView(),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    'Devoloped by Ahmed Abd ElHady',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: 1),
+                  ),
+                ),
               ],
             ),
           ),
